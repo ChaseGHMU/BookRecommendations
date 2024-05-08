@@ -14,6 +14,12 @@
 		9453298A2BEC130D0064E2E8 /* BookRecommendationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945329892BEC130D0064E2E8 /* BookRecommendationsTests.swift */; };
 		945329942BEC130D0064E2E8 /* BookRecommendationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945329932BEC130D0064E2E8 /* BookRecommendationsUITests.swift */; };
 		945329962BEC130D0064E2E8 /* BookRecommendationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945329952BEC130D0064E2E8 /* BookRecommendationsUITestsLaunchTests.swift */; };
+		94532A1E2BEC1B3B0064E2E8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94532A1D2BEC1B3B0064E2E8 /* WidgetKit.framework */; };
+		94532A202BEC1B3B0064E2E8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94532A1F2BEC1B3B0064E2E8 /* SwiftUI.framework */; };
+		94532A232BEC1B3B0064E2E8 /* BookReccomendationsWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A222BEC1B3B0064E2E8 /* BookReccomendationsWidgetBundle.swift */; };
+		94532A252BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A242BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift */; };
+		94532A272BEC1B3C0064E2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94532A262BEC1B3C0064E2E8 /* Assets.xcassets */; };
+		94532A2B2BEC1B3C0064E2E8 /* BookReccomendationsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 94532A1B2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,28 @@
 			remoteGlobalIDString = 945329742BEC130D0064E2E8;
 			remoteInfo = BookRecommendations;
 		};
+		94532A292BEC1B3C0064E2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9453296D2BEC130D0064E2E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94532A1A2BEC1B3B0064E2E8;
+			remoteInfo = BookReccomendationsWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94532A2C2BEC1B3C0064E2E8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				94532A2B2BEC1B3C0064E2E8 /* BookReccomendationsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		945329752BEC130D0064E2E8 /* BookRecommendations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookRecommendations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +71,13 @@
 		9453298F2BEC130D0064E2E8 /* BookRecommendationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookRecommendationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		945329932BEC130D0064E2E8 /* BookRecommendationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRecommendationsUITests.swift; sourceTree = "<group>"; };
 		945329952BEC130D0064E2E8 /* BookRecommendationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRecommendationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94532A1B2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BookReccomendationsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		94532A1D2BEC1B3B0064E2E8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		94532A1F2BEC1B3B0064E2E8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		94532A222BEC1B3B0064E2E8 /* BookReccomendationsWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReccomendationsWidgetBundle.swift; sourceTree = "<group>"; };
+		94532A242BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReccomendationsWidget.swift; sourceTree = "<group>"; };
+		94532A262BEC1B3C0064E2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94532A282BEC1B3C0064E2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +102,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94532A182BEC1B3B0064E2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94532A202BEC1B3B0064E2E8 /* SwiftUI.framework in Frameworks */,
+				94532A1E2BEC1B3B0064E2E8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +120,8 @@
 				945329772BEC130D0064E2E8 /* BookRecommendations */,
 				945329882BEC130D0064E2E8 /* BookRecommendationsTests */,
 				945329922BEC130D0064E2E8 /* BookRecommendationsUITests */,
+				94532A212BEC1B3B0064E2E8 /* BookReccomendationsWidget */,
+				94532A1C2BEC1B3B0064E2E8 /* Frameworks */,
 				945329762BEC130D0064E2E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +132,7 @@
 				945329752BEC130D0064E2E8 /* BookRecommendations.app */,
 				945329852BEC130D0064E2E8 /* BookRecommendationsTests.xctest */,
 				9453298F2BEC130D0064E2E8 /* BookRecommendationsUITests.xctest */,
+				94532A1B2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +173,26 @@
 			path = BookRecommendationsUITests;
 			sourceTree = "<group>";
 		};
+		94532A1C2BEC1B3B0064E2E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94532A1D2BEC1B3B0064E2E8 /* WidgetKit.framework */,
+				94532A1F2BEC1B3B0064E2E8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94532A212BEC1B3B0064E2E8 /* BookReccomendationsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				94532A222BEC1B3B0064E2E8 /* BookReccomendationsWidgetBundle.swift */,
+				94532A242BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift */,
+				94532A262BEC1B3C0064E2E8 /* Assets.xcassets */,
+				94532A282BEC1B3C0064E2E8 /* Info.plist */,
+			);
+			path = BookReccomendationsWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +203,12 @@
 				945329712BEC130D0064E2E8 /* Sources */,
 				945329722BEC130D0064E2E8 /* Frameworks */,
 				945329732BEC130D0064E2E8 /* Resources */,
+				94532A2C2BEC1B3C0064E2E8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				94532A2A2BEC1B3C0064E2E8 /* PBXTargetDependency */,
 			);
 			name = BookRecommendations;
 			productName = BookRecommendations;
@@ -183,6 +251,23 @@
 			productReference = 9453298F2BEC130D0064E2E8 /* BookRecommendationsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		94532A1A2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94532A2F2BEC1B3C0064E2E8 /* Build configuration list for PBXNativeTarget "BookReccomendationsWidgetExtension" */;
+			buildPhases = (
+				94532A172BEC1B3B0064E2E8 /* Sources */,
+				94532A182BEC1B3B0064E2E8 /* Frameworks */,
+				94532A192BEC1B3B0064E2E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookReccomendationsWidgetExtension;
+			productName = BookReccomendationsWidgetExtension;
+			productReference = 94532A1B2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +289,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 945329742BEC130D0064E2E8;
 					};
+					94532A1A2BEC1B3B0064E2E8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 945329702BEC130D0064E2E8 /* Build configuration list for PBXProject "BookRecommendations" */;
@@ -222,6 +310,7 @@
 				945329742BEC130D0064E2E8 /* BookRecommendations */,
 				945329842BEC130D0064E2E8 /* BookRecommendationsTests */,
 				9453298E2BEC130D0064E2E8 /* BookRecommendationsUITests */,
+				94532A1A2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +336,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94532A192BEC1B3B0064E2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94532A272BEC1B3C0064E2E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +376,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94532A172BEC1B3B0064E2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94532A232BEC1B3B0064E2E8 /* BookReccomendationsWidgetBundle.swift in Sources */,
+				94532A252BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +397,11 @@
 			isa = PBXTargetDependency;
 			target = 945329742BEC130D0064E2E8 /* BookRecommendations */;
 			targetProxy = 945329902BEC130D0064E2E8 /* PBXContainerItemProxy */;
+		};
+		94532A2A2BEC1B3C0064E2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94532A1A2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension */;
+			targetProxy = 94532A292BEC1B3C0064E2E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +528,7 @@
 		9453299A2BEC130D0064E2E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +557,7 @@
 		9453299B2BEC130D0064E2E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +655,58 @@
 			};
 			name = Release;
 		};
+		94532A2D2BEC1B3C0064E2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookReccomendationsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BookReccomendationsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watertower.BookRecommendations.BookReccomendationsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94532A2E2BEC1B3C0064E2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookReccomendationsWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BookReccomendationsWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.watertower.BookRecommendations.BookReccomendationsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +742,15 @@
 			buildConfigurations = (
 				945329A02BEC130D0064E2E8 /* Debug */,
 				945329A12BEC130D0064E2E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94532A2F2BEC1B3C0064E2E8 /* Build configuration list for PBXNativeTarget "BookReccomendationsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94532A2D2BEC1B3C0064E2E8 /* Debug */,
+				94532A2E2BEC1B3C0064E2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
