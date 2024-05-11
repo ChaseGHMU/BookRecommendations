@@ -25,6 +25,10 @@
 		94532A452BEEF58C0064E2E8 /* BookInformationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A442BEEF58C0064E2E8 /* BookInformationResponse.swift */; };
 		94532A472BEEF9F80064E2E8 /* ServiceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A462BEEF9F80064E2E8 /* ServiceComponent.swift */; };
 		94532A492BEEFBDB0064E2E8 /* BookInformationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A482BEEFBDB0064E2E8 /* BookInformationComponent.swift */; };
+		94532A4C2BF02BBD0064E2E8 /* AmazonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A4B2BF02BBD0064E2E8 /* AmazonButton.swift */; };
+		94532A4E2BF02BE50064E2E8 /* OpenLibraryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A4D2BF02BE50064E2E8 /* OpenLibraryButton.swift */; };
+		94532A512BF02C090064E2E8 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A502BF02C090064E2E8 /* AppleButton.swift */; };
+		94532A542BF02C200064E2E8 /* ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A532BF02C200064E2E8 /* ButtonStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,10 @@
 		94532A442BEEF58C0064E2E8 /* BookInformationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInformationResponse.swift; sourceTree = "<group>"; };
 		94532A462BEEF9F80064E2E8 /* ServiceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceComponent.swift; sourceTree = "<group>"; };
 		94532A482BEEFBDB0064E2E8 /* BookInformationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInformationComponent.swift; sourceTree = "<group>"; };
+		94532A4B2BF02BBD0064E2E8 /* AmazonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonButton.swift; sourceTree = "<group>"; };
+		94532A4D2BF02BE50064E2E8 /* OpenLibraryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLibraryButton.swift; sourceTree = "<group>"; };
+		94532A502BF02C090064E2E8 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
+		94532A532BF02C200064E2E8 /* ButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				94532A3D2BEC65220064E2E8 /* Network */,
+				94532A522BF02C130064E2E8 /* ButtonStackView */,
 				945329782BEC130D0064E2E8 /* BookRecommendationsApp.swift */,
 				9453297A2BEC130D0064E2E8 /* ContentView.swift */,
 				9453297C2BEC130D0064E2E8 /* Assets.xcassets */,
@@ -222,6 +231,25 @@
 				94532A482BEEFBDB0064E2E8 /* BookInformationComponent.swift */,
 			);
 			path = BookInformation;
+			sourceTree = "<group>";
+		};
+		94532A4A2BF02BAF0064E2E8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				94532A4B2BF02BBD0064E2E8 /* AmazonButton.swift */,
+				94532A4D2BF02BE50064E2E8 /* OpenLibraryButton.swift */,
+				94532A502BF02C090064E2E8 /* AppleButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		94532A522BF02C130064E2E8 /* ButtonStackView */ = {
+			isa = PBXGroup;
+			children = (
+				94532A4A2BF02BAF0064E2E8 /* Buttons */,
+				94532A532BF02C200064E2E8 /* ButtonStackView.swift */,
+			);
+			path = ButtonStackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,9 +417,13 @@
 				94532A492BEEFBDB0064E2E8 /* BookInformationComponent.swift in Sources */,
 				9453297B2BEC130D0064E2E8 /* ContentView.swift in Sources */,
 				945329792BEC130D0064E2E8 /* BookRecommendationsApp.swift in Sources */,
+				94532A512BF02C090064E2E8 /* AppleButton.swift in Sources */,
+				94532A542BF02C200064E2E8 /* ButtonStackView.swift in Sources */,
+				94532A4E2BF02BE50064E2E8 /* OpenLibraryButton.swift in Sources */,
 				94532A472BEEF9F80064E2E8 /* ServiceComponent.swift in Sources */,
 				94532A402BEEF3000064E2E8 /* SessionManager.swift in Sources */,
 				94532A3E2BEC65220064E2E8 /* BookInformationNetworkService.swift in Sources */,
+				94532A4C2BF02BBD0064E2E8 /* AmazonButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
