@@ -20,6 +20,11 @@
 		94532A252BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A242BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift */; };
 		94532A272BEC1B3C0064E2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94532A262BEC1B3C0064E2E8 /* Assets.xcassets */; };
 		94532A2B2BEC1B3C0064E2E8 /* BookReccomendationsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 94532A1B2BEC1B3B0064E2E8 /* BookReccomendationsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94532A3E2BEC65220064E2E8 /* BookInformationNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A3C2BEC65220064E2E8 /* BookInformationNetworkService.swift */; };
+		94532A402BEEF3000064E2E8 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A3F2BEEF3000064E2E8 /* SessionManager.swift */; };
+		94532A452BEEF58C0064E2E8 /* BookInformationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A442BEEF58C0064E2E8 /* BookInformationResponse.swift */; };
+		94532A472BEEF9F80064E2E8 /* ServiceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A462BEEF9F80064E2E8 /* ServiceComponent.swift */; };
+		94532A492BEEFBDB0064E2E8 /* BookInformationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94532A482BEEFBDB0064E2E8 /* BookInformationComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		94532A242BEC1B3B0064E2E8 /* BookReccomendationsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReccomendationsWidget.swift; sourceTree = "<group>"; };
 		94532A262BEC1B3C0064E2E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94532A282BEC1B3C0064E2E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94532A3C2BEC65220064E2E8 /* BookInformationNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookInformationNetworkService.swift; sourceTree = "<group>"; };
+		94532A3F2BEEF3000064E2E8 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		94532A442BEEF58C0064E2E8 /* BookInformationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInformationResponse.swift; sourceTree = "<group>"; };
+		94532A462BEEF9F80064E2E8 /* ServiceComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceComponent.swift; sourceTree = "<group>"; };
+		94532A482BEEFBDB0064E2E8 /* BookInformationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInformationComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,7 @@
 		945329772BEC130D0064E2E8 /* BookRecommendations */ = {
 			isa = PBXGroup;
 			children = (
+				94532A3D2BEC65220064E2E8 /* Network */,
 				945329782BEC130D0064E2E8 /* BookRecommendationsApp.swift */,
 				9453297A2BEC130D0064E2E8 /* ContentView.swift */,
 				9453297C2BEC130D0064E2E8 /* Assets.xcassets */,
@@ -191,6 +202,26 @@
 				94532A282BEC1B3C0064E2E8 /* Info.plist */,
 			);
 			path = BookReccomendationsWidget;
+			sourceTree = "<group>";
+		};
+		94532A3D2BEC65220064E2E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94532A462BEEF9F80064E2E8 /* ServiceComponent.swift */,
+				94532A3F2BEEF3000064E2E8 /* SessionManager.swift */,
+				94532A412BEEF4960064E2E8 /* BookInformation */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		94532A412BEEF4960064E2E8 /* BookInformation */ = {
+			isa = PBXGroup;
+			children = (
+				94532A3C2BEC65220064E2E8 /* BookInformationNetworkService.swift */,
+				94532A442BEEF58C0064E2E8 /* BookInformationResponse.swift */,
+				94532A482BEEFBDB0064E2E8 /* BookInformationComponent.swift */,
+			);
+			path = BookInformation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,8 +385,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94532A452BEEF58C0064E2E8 /* BookInformationResponse.swift in Sources */,
+				94532A492BEEFBDB0064E2E8 /* BookInformationComponent.swift in Sources */,
 				9453297B2BEC130D0064E2E8 /* ContentView.swift in Sources */,
 				945329792BEC130D0064E2E8 /* BookRecommendationsApp.swift in Sources */,
+				94532A472BEEF9F80064E2E8 /* ServiceComponent.swift in Sources */,
+				94532A402BEEF3000064E2E8 /* SessionManager.swift in Sources */,
+				94532A3E2BEC65220064E2E8 /* BookInformationNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

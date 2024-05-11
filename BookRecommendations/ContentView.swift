@@ -14,6 +14,13 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Button {
+                Task {
+                    await BookInformationNetworkService.getBookInformation(forBookNamed: "Dracula")
+                }
+            } label: {
+                Text("Get Book Info")
+            }
         }
         .padding()
     }
